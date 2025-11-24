@@ -6,7 +6,7 @@ This project implements a full fraud-detection workflow built around the NeurIPS
 The workflow cleans and standardizes the raw dataset, applies PCA for dimensionality reduction, and uses NearMiss undersampling to address the strong class imbalance. Multiple models were tested, with LightGBM performing the strongest after hyperparameter tuning.
 
 ## Model Performance
-The tuned LightGBM model achieved a ROC–AUC of approximately 0.87 on held-out validation data. The notebook includes cross-validation scores, ROC curves, and diagnostics illustrating model behavior.
+The tuned LightGBM model achieved a ROC–AUC of approximately 0.87 on held-out validation data. The notebook includes cross-validation scores, ROC curves, and diagnostics illustrating model behavior. The other models achieved similiar performance. 
 
 ## API Integration
 The entire pipeline (preprocessing → inference → evaluation tools) is packaged behind a FastAPI interface for deployment, although the API code itself is not included in this repository.
